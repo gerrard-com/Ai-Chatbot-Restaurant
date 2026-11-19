@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from 'react';
+﻿import { useEffect, useRef, useState } from 'react';
 
 const STATS = [
   { value: 'A5', label: 'Miyazaki Wagyu Grade' },
@@ -215,13 +215,13 @@ export default function LandingPage({ onEnter }) {
             Eight cuts.<br />One obsession.
           </h2>
           <p className="lp-body">
-            From a silky Charolais Filet Mignon at €68 to the showstopping
-            Royal Tomahawk at €120 — every cut is dry-aged in-house and
+            From a silky Charolais Filet Mignon at Rp 1.156.000 to the showstopping
+            Royal Tomahawk at Rp 2.040.000 — every cut is dry-aged in-house and
             accompanied by house-made sauces, seasonal sides and a
             thoughtfully chosen wine pairing.
           </p>
           <p className="lp-body">
-            The Royal Experience (€145) brings everything to the table in
+            The Royal Experience (Rp 2.465.000) brings everything to the table in
             five deliberate courses, orchestrated by Chef Beaumont personally.
           </p>
           <div className="lp-menu-teaser-actions">
@@ -233,10 +233,10 @@ export default function LandingPage({ onEnter }) {
         </div>
         <div className="lp-menu-dishes" aria-hidden="true">
           {[
-            { name: 'Japanese A5 Wagyu Ribeye', price: '€95', tag: "Chef's favourite" },
-            { name: 'Royal Tomahawk Steak', price: '€120', tag: '45-day dry-aged' },
-            { name: 'Black Truffle Tenderloin', price: '€78', tag: '24k gold leaf' },
-            { name: 'The Royal Experience', price: '€145', tag: '5-course tasting' },
+            { name: 'Japanese A5 Wagyu Ribeye', price: 'Rp 1.615.000', tag: "Chef's favourite" },
+            { name: 'Royal Tomahawk Steak', price: 'Rp 2.040.000', tag: '45-day dry-aged' },
+            { name: 'Black Truffle Tenderloin', price: 'Rp 1.326.000', tag: '24k gold leaf' },
+            { name: 'The Royal Experience', price: 'Rp 2.465.000', tag: '5-course tasting' },
           ].map(({ name, price, tag }) => (
             <button
               key={name}
@@ -308,3 +308,4 @@ export default function LandingPage({ onEnter }) {
     </div>
   );
 }
+

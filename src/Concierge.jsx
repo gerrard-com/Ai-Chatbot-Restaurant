@@ -1,4 +1,4 @@
-import { useRef, useState } from 'react';
+﻿import { useRef, useState } from 'react';
 import { MENU_DATA } from './data.js';
 import { useDialog } from './hooks.js';
 
@@ -80,7 +80,7 @@ export default function Concierge({ open, onClose, lang, onLang, messages, typin
                         <span>CHEF’S TABLE · 0{recommendationIndex + 1}</span>
                       </div>
                       <div className="recommendation-copy">
-                        <div className="recommendation-title"><h3>{dish.name}</h3><b>€{dish.price}</b></div>
+                        <div className="recommendation-title"><h3>{dish.name}</h3><b>Rp {dish.price}</b></div>
                         <p>{dish.flavorProfile}</p>
                         <span className="recommendation-temp">BEST AT · {dish.recommendedTemp}</span>
                       </div>
@@ -132,3 +132,4 @@ export default function Concierge({ open, onClose, lang, onLang, messages, typin
     </section>
   );
 }
+

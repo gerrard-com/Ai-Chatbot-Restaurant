@@ -160,7 +160,7 @@ export default function App() {
   const askAbout = (dish) => {
     setModalDish(null);
     setChatOpen(true);
-    sendPrompt(`Tell me about ${dish.name} (€${dish.price}), its flavour profile and the best pairing.`);
+    sendPrompt(`Tell me about ${dish.name} (Rp ${dish.price}), its flavour profile and the best pairing.`);
   };
 
   const spotlight = TABLE_DISHES[tableIdx] || TABLE_DISHES[0];
@@ -319,7 +319,7 @@ export default function App() {
                   <p className="meta">{spotlight.category}</p>
                   <div className="row-head">
                     <h2 className="spot-title">{spotlight.name}</h2>
-                    <span className="price">€{spotlight.price}</span>
+                    <span className="price">Rp {spotlight.price}</span>
                   </div>
                   <p className="spot-copy">{spotlight.description}</p>
                   <dl className="facts">
@@ -343,7 +343,7 @@ export default function App() {
                   <p className="hero-eyebrow">THE ÉTOILE CUT BOOK</p>
                   <h2 className="h2">Turn up the heat.</h2>
                 </div>
-                <p className="meta">{filteredMenu.length} selections · all prices in EUR</p>
+                <p className="meta">{filteredMenu.length} selections · semua harga dalam Rupiah</p>
               </header>
 
               <div className="filters">
@@ -470,4 +470,5 @@ export default function App() {
     </>
   );
 }
+
 
